@@ -1,0 +1,27 @@
+info:
+  component: Edge Server
+
+server:
+  port: 8765
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+  mapping:
+    DOWN: OK
+
+zuul:
+  routes:
+    employee-producer:
+         path: /api/EmployeeProducer/**
+         serviceId: employee-producer
+    employee-recruitment:
+          path: /api/recruitment/**
+          serviceId: employee-recruitment
+
+ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+
