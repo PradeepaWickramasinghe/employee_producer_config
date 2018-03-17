@@ -18,11 +18,11 @@ zuul:
   ignored-services: "*"
   routes:
     employee-producer:
-         path: /api/EmployeeProducer/**
-         serviceId: employee-producer
+      path: /api/EmployeeProducer/**
+      serviceId: employee-producer
     employee-recruitment:
-          path: /api/recruitment/**
-          serviceId: employee-recruitment
+      path: /api/recruitment/**
+      serviceId: employee-recruitment
 
 ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
 
