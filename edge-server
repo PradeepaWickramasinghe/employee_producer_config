@@ -15,6 +15,7 @@ endpoints:
     DOWN: OK
 
 zuul:
+  ignored-services: "*"
   routes:
     employee-producer:
          path: /api/EmployeeProducer/**
