@@ -1,0 +1,9 @@
+server.port=8098
+spring.application.name: employee-producer
+management.security.enabled=false
+
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/hashicorp
+spring.datasource.username=postgres
+spring.datasource.password=root
+spring.jpa.generate-ddl=true
