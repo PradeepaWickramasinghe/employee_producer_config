@@ -1,0 +1,17 @@
+
+server:
+  port: 9098
+spring:
+  application:
+    name: employee-search
+  management:
+    security:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: create-drop      
+      #ddl-auto: update      
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hashicorp
+    username: postgres
+    password: root
