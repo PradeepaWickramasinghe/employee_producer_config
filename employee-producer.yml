@@ -11,7 +11,8 @@ management:
 
 spring:
   jpa:
-   generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
   datasource:
     url: jdbc:postgresql://localhost:5432/hashicorp
     username: postgres
