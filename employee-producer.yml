@@ -8,6 +8,10 @@ spring:
   management:
     security:
       enabled: false
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
   jpa:
     hibernate:
       ddl-auto: create-drop      
