@@ -20,8 +20,8 @@ zuul:
     employee-producer:
       path: /api/employee-producer/**
       serviceId: employee-producer
-    employee-recruitment:
-      path: /api/search/**
+    employee-search:
+      path: /api/employee-search/**
       serviceId: employee-search
 
 ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
