@@ -13,7 +13,7 @@ spring:
       host: localhost
       port: 8500
       discovery:
-        healthCheckPath: /heartbeat-check 
+        healthCheckPath: /api/employee-producer/heartbeat-check 
         healthCheckInterval: 20s
   jpa:
     hibernate:
