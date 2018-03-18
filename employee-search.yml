@@ -11,7 +11,7 @@ spring:
     hibernate:
       ddl-auto: none      
       #ddl-auto: update      
-  datasource:
-    url: jdbc:postgresql://localhost:5432/hashicorp
-    username: postgres
-    password: root
+  #datasource:
+    #url: jdbc:postgresql://localhost:5432/hashicorp
+    #username: postgres
+    #password: root
