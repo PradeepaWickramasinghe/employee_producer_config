@@ -1,5 +1,7 @@
+#server port no
 server:
   port: 8098
+
 spring:
   application:
     name: employee-producer
@@ -7,11 +9,11 @@ management:
   security:
     enabled: false
 
-
 spring:
+  jpa:
+   generate-ddl: true
   datasource:
     url: jdbc:postgresql://localhost:5432/hashicorp
     username: postgres
     password: root
- jpa:
-   generate-ddl: true
+
