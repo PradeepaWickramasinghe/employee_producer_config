@@ -1,5 +1,5 @@
 info:
-  component: Edge Server
+  component: api-gateway
 
 server:
   port: 8765
@@ -18,10 +18,10 @@ zuul:
   ignored-services: "*"
   routes:
     employee-producer:
-      path: /api/EmployeeProducer/**
+      path: /api/employee-producer/**
       serviceId: employee-producer
     employee-recruitment:
-      path: /api/recruitment/**
-      serviceId: employee-recruitment
+      path: /api/search/**
+      serviceId: employee-search
 
 ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
