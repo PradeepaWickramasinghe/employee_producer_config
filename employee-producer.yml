@@ -12,6 +12,9 @@ spring:
     consul:
       host: localhost
       port: 8500
+      discovery:
+        healthCheckPath: /heartbeat-check 
+        healthCheckInterval: 20s
   jpa:
     hibernate:
       ddl-auto: create-drop      
