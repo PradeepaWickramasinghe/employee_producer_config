@@ -6,8 +6,8 @@ spring:
   application:
     name: employee-producer
   management:
-  security:
-    enabled: false
+    security:
+      enabled: false
   jpa:
     hibernate:
       ddl-auto: create-drop
