@@ -10,8 +10,8 @@ spring:
       enabled: false
   jpa:
     hibernate:
-      #ddl-auto: update
       ddl-auto: create-drop      
+      #ddl-auto: update      
   datasource:
     url: jdbc:postgresql://localhost:5432/hashicorp
     username: postgres
