@@ -13,7 +13,9 @@ endpoints:
     sensitive: false
   mapping:
     DOWN: OK
-
+ribbon:
+  eureka:
+    enabled: false
 zuul:
   ignored-services: "*"
   routes:
