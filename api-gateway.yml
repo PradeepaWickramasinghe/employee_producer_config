@@ -27,7 +27,7 @@ ribbon:
   #restclient:
    # enabled: true
 zuul:
-  ignoreLocalService: false
+  #ignoreLocalService: false
   #ignored-services: "*"
   routes:
     employee-producer:
