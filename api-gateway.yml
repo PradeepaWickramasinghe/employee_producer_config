@@ -21,7 +21,9 @@ spring:
         port: 8500
 ribbon:
   eureka:
-    enabled: false
+    enabled: true
+  restclient:
+    enabled: true
 zuul:
   ignoreLocalService: false
   #ignored-services: "*"
