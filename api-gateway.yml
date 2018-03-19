@@ -32,5 +32,14 @@ zuul:
     employee-search:
       path: /api/employee-search/**
       serviceId: employee-search
+      
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 60000
 
 ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
