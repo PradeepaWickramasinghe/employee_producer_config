@@ -11,8 +11,7 @@ endpoints:
     enabled: true
   health:
     sensitive: false
-  mapping:
-    DOWN: OK
+
 spring:
   cloud:
     consul:
