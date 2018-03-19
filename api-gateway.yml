@@ -15,19 +15,19 @@ endpoints:
 spring:
   cloud:
     consul:
-      instance:
-        preferIpAddress: true
+      #instance:
+       # preferIpAddress: true
       config:
         enabled: true
         host: localhost
         port: 8500
 ribbon:
   eureka:
-    enabled: true
-  restclient:
-    enabled: true
+    enabled: false
+  #restclient:
+   # enabled: true
 zuul:
-  #ignoreLocalService: false
+  ignoreLocalService: false
   #ignored-services: "*"
   routes:
     employee-producer:
@@ -36,6 +36,12 @@ zuul:
     employee-search:
       path: /api/employee-search/**
       serviceId: employee-search
+      
+logging:
+  file: Edge.log
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
       
 #hystrix:
  # command:
