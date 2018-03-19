@@ -18,7 +18,7 @@ zuul:
   ignored-services: "*"
   routes:
     employee-producer:
-      path: /api/employee-producer/**
+      path: /api/employee-registration/**
       serviceId: employee-producer
     employee-search:
       path: /api/employee-search/**
