@@ -24,7 +24,7 @@ ribbon:
   eureka:
     enabled: false
 zuul:
-  ignored-services: "*"
+  #ignored-services: "*"
   routes:
     employee-producer:
       path: /api/employee-registration/**
