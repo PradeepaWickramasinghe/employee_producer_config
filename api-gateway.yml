@@ -15,6 +15,8 @@ endpoints:
 spring:
   cloud:
     consul:
+      instance:
+        preferIpAddress: true
       config:
         enabled: true
         host: localhost
@@ -25,7 +27,7 @@ ribbon:
   restclient:
     enabled: true
 zuul:
-  ignoreLocalService: false
+  #ignoreLocalService: false
   #ignored-services: "*"
   routes:
     employee-producer:
@@ -35,13 +37,13 @@ zuul:
       path: /api/employee-search/**
       serviceId: employee-search
       
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          strategy: THREAD
-          thread:
-            timeoutInMilliseconds: 60000
+#hystrix:
+ # command:
+  #  default:
+   #   execution:
+    #    isolation:
+     #     strategy: THREAD
+      #    thread:
+       #     timeoutInMilliseconds: 60000
 
 ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
