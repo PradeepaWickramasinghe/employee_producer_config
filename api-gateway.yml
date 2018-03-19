@@ -32,7 +32,8 @@ zuul:
   routes:
     employee-producer:
       path: /api/employee-registration/**
-      serviceId: employee-producer
+      #serviceId: employee-producer
+      url: http://localhost:8098/api/employee-registration
     employee-search:
       path: /api/employee-search/**
       serviceId: employee-search
