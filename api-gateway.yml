@@ -38,6 +38,7 @@ zuul:
     employee-search:
       path: /api/employee-search/**
       serviceId: employee-search
+      stripPrefix: false
       
 logging:
   file: Edge.log
