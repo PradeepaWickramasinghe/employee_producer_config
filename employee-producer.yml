@@ -15,6 +15,9 @@ spring:
       discovery:
         healthCheckPath: /api/employee-registration/heartbeat-check 
         healthCheckInterval: 20s
+#    config:
+#      profile:
+#        active: development
   jpa:
     hibernate:
       #ddl-auto: create-drop      
